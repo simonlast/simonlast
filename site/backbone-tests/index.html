@@ -1,0 +1,29 @@
+<html>
+<head>
+<title>tests</title>
+<link rel="stylesheet" type="text/css" href="/styles/style.css" />
+<script type="text/javascript" src="/scripts/underscore-min.js"></script>
+<script type="text/javascript" src="/scripts/backbone-min.js"></script>
+<script type="text/javascript">
+	Person = Backbone.Model.extend({
+		initialize: function(){
+			console.log("hello " + this.get('name'));
+		},
+		defaults: {
+			name: "Bob",
+			height: "unknown"
+		}
+	});
+	
+	var person = new Person({name:'Joe', height:'6 ft'});
+	
+	console.log(person.get('name'));
+	
+</script>
+
+</head>
+<body>
+
+
+</body>
+</html>
