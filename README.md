@@ -1,1 +1,1 @@
-#[My Website](http://simonlast.org)
+#[simonlast.org](http://simonlast.org)
