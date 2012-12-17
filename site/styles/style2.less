@@ -4,19 +4,20 @@
 @divcol: @highlight-color;
 
 .rounded-corners (@radius: 15px) {
-  border-radius: @radius;
+  /*border-radius: @radius;
   -webkit-border-radius: @radius;
-  -moz-border-radius: @radius;
+  -moz-border-radius: @radius;*/
 }
 
 .ease (@time: .2s) {
+	-webkit-backface-visibility: hidden; /* Prevents flickering */
 	-webkit-transition: all @time ease-in-out;
     -moz-transition: all @time ease-in-out;
     -o-transition: all @time ease-in-out;
     -ms-transition: all @time ease-in-out;
 }
 
-.scale (@amount: 1.1){
+.scale (@amount: 1.04){	 
 	-webkit-transform: scale( @amount );
     -moz-transform: scale( @amount );
     -o-transform: scale( @amount );
@@ -50,17 +51,18 @@ body {
 
   a{
 	 font-size: 100px;
-	 line-height: 100%;
+	 line-height: 115px;
 	 color: @text-col;
 	 background-color:@highlight-color;
 	 text-decoration:none;
 	 opacity: .8;
 	 .ease;
-	.shadow(10px);
+	
 	}
 	
   a:hover{
 	opacity: 1;
+	.shadow(10px);
 }
   
 
@@ -86,12 +88,11 @@ body {
 		text-decoration: none;
 		color: @text-col;
 		font-size: 20px;
-		border: 1px solid rgb(200,200,200);
 	 	background-color: @divcol;
 	  	margin-bottom: 20px;
 	  	padding-bottom: 10px;
 		.rounded-corners(5px);
-		.shadow(10px);
+		/*.shadow(10px);*/
 		.ease;
 		opacity: .9;
 	}
@@ -99,13 +100,13 @@ body {
 	a:hover{
 		opacity: 1;
 		.shadow(20px);
-		.scale(1.05);
+		.scale;
 	}
 	
 	img{
 		max-width:350px;
 		.rounded-corners(5px);
-		.shadow(5px);
+		.shadow(10px);
 		
 	}
 	
@@ -138,11 +139,12 @@ body {
 	  	.ease;
 		font-size: 50px;
 		opacity: .8;
-		.shadow(10px);
+		
 	}
 	
 	a:hover{
 		opacity:1;
+		.shadow(10px);
 	}
 
 }
@@ -203,17 +205,17 @@ body {
 		padding:20px;
 		.ease;
 		display:inline-block;
-		border: 1px solid rgb(200,200,200);
 	 	background-color: @divcol;
 		color: @text-col;
 		.rounded-corners(5px);
-		.shadow(5px);
+	
 		.ease;
 		margin: 20px;
 		
 		a{
 			text-decoration:none;
 			color: @text-col;
+			
 		}
 		
 
@@ -221,6 +223,7 @@ body {
 	
 	li:hover{
 		.scale(1.05);
+		.shadow(10px);
 	}
 
 }
@@ -243,11 +246,12 @@ body {
 	padding-bottom:8px;
 	line-height:82px;
 	opacity:.8;
-	.shadow(10px);
+	
   }
 
 	a:hover{
 		opacity:1;
+		.shadow(10px);
 	}
 }
 
