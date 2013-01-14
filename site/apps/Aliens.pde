@@ -1,13 +1,13 @@
-float triangWidth, blasterSpeed, alienXspeed, alienspeed;
+float triangWidth, blasterSpeed, alienXspeed, alienspeed, alienWidth;
 Blaster b;
 ArrayList bullets, aliens;
 PFont f, f2;
 boolean lose, win, roundsbool, gamestarted;
 int rounds, points;
-color bkg = color(30);
+color bkg = color(50);
 
 void setup(){
- size(600,450);
+ size(screenWidth,screenHeight);
  smooth();
  background(bkg); 
  triangWidth = 30;
@@ -15,20 +15,21 @@ void setup(){
  blasterSpeed = 6;
  bullets = new ArrayList();
  aliens = new ArrayList();
+ alienWidth = width/40;
  //for(int x=1; x<4; x++)
  //  aliens.add(new Alien(5*x*random(5,25),5*x*random(5,25),random(30,50)));
  for(int x=1; x<11; x++)
    for(int y=1; y<9; y++)
-     aliens.add(new Alien(x*width/11-20,y*(height-200)/8,25));
+     aliens.add(new Alien(x*width/11-20,y*(height-200)/8,alienWidth));
  
- f = loadFont("Serif-20.vlw");
- f2 = loadFont("Serif-20.vlw");
+ f = createFont("Helvetica",50);
+ f2 = createFont("Helvetica",100);
   lose = false;
   alienspeed = .05;
   win = false;
   rounds = 0;
   roundsbool = false;
-  alienXspeed = .1;
+  alienXspeed = .5;
   gamestarted = false;
   points = 0;
 }
@@ -105,9 +106,11 @@ void draw(){
   }
   else{
   background(bkg); 
-   fill(255);
-  textFont(f,48);
-  text("FAIL\nPress 'o' to retry",50,100);
+   fill(250);
+   textFont(f,width/5);
+  text("oops",50,width/5);
+  textFont(f,width/15);
+  text("press 'o' to retry.",50,width/3);
     if(!roundsbool){
   rounds = 0;
   points = 0;
@@ -120,9 +123,11 @@ void draw(){
   }
   else{
   background(bkg); 
-   fill(255);
-  textFont(f,48);
-  text("WIN!!\nPress 'o' to advance\nIt gets harder...",50,100); 
+  fill(250);
+  textFont(f,width/5);
+  text("nice!",50,width/5);
+  textFont(f,width/15);
+  text("press 'o' to advance\nit gets harder.",50,width/3.5);
   if(!roundsbool){
   rounds++;
   roundsbool = true;
@@ -130,16 +135,20 @@ void draw(){
     
   }
   
-  fill(255);
-  textFont(f2,20);
-  text("Rounds Survived: " + rounds,20,20); 
-  text("Points " + points,width-170,20); 
+  fill(250);
+  textAlign(RIGHT); 
+  textFont(f2,width/15);
+  text(points,width-15,width/16);
+  textAlign(LEFT);
+
 }
 else{
   background(bkg);
-     fill(255);
-  textFont(f,40);
-  text("ALIENS\nUse the arrow keys to move\nand SPACE to fire\nClick to Start",50,100);
+     fill(250);
+  textFont(f,width/5);
+  text("aliens",50,width/5);
+  textFont(f,width/15);
+  text("use the arrow keys to move\nand SPACE to fire\nclick to start.",50,width/3.5);
   b.render();
 }
 
@@ -198,7 +207,7 @@ void restart(){
  //  aliens.add(new Alien(5*x*random(5,25),5*x*random(5,25),random(30,50)));
  for(int x=1; x<11; x++)
    for(int y=1; y<9; y++)
-      aliens.add(new Alien(x*width/11-20,y*(height-200)/8,25));
+      aliens.add(new Alien(x*width/11-20,y*(height-200)/8,alienWidth));
  
  f = loadFont("Serif-48.vlw");
   lose = false; 
@@ -237,7 +246,7 @@ class Blaster{
    v -= a; 
    x += v;
    noFill();
-    strokeWeight(1);
+    strokeWeight(2);
    stroke(255);
    triangle(x-triangWidth/2,height-10,x,height-45,x+triangWidth/2,height-10);
    
@@ -266,7 +275,7 @@ void render(){
   y+= vy;
   //stroke(random(255),random(255),random(255));
   stroke(255);
-  strokeWeight(1);
+  strokeWeight(2);
   line(x,y,x,y+10);
   
 }
@@ -296,7 +305,7 @@ class Alien{
   }
   
   void render(){
-     strokeWeight(1);
+     strokeWeight(2);
    fill(r,g,b,100);
    stroke(255);
    rect(pos.x,pos.y,w,w);
