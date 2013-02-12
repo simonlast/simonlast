@@ -316,3 +316,9 @@ body {
   max-height: 500px;
   border: 0;
 }
+/*colors*/
+.color {
+  width: 800px;
+  height: 200px;
+  margin: 50px auto;
+}
