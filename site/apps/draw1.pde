@@ -38,24 +38,24 @@ color currColor = color(60);
  PGraphics buffer;
 
 void setup(){
-size(screenWidth,screenHeight);
- // size(1000,700);
+
+  size(screenWidth,screenHeight);
+
   smooth();
   noStroke();
-  //f = loadFont("Helvetica-30.vlw");
+
+
   background(255);
   brushes = new ArrayList<Brush>();
   buffer = createGraphics(width,height, P2D);
-  //buffer.setParent(this);
-  //buffer.setPrimary(false);
+
+
   buffer.smooth();
   buffer.noStroke();
   buffer.beginDraw();
   buffer.background(255);
   buffer.endDraw();
-  //for(int x=0; x<numBrushes; x++){
-  // brushes.add(new Brush(random(width),random(height), comp)); 
-  //}
+
   lastMouse = new PVector(mouseX,mouseY);
   colors = new ArrayList<PVector>();
   colors.add(new PVector(202,237,105));
@@ -98,7 +98,7 @@ void draw(){
       dragged.pos = new PVector(mouseX,mouseY); 
    }
    if(!mousePressed)
-   image(buffer, 0,0);
+    image(buffer, 0,0);
    
    
     for(Brush br : brushes){
@@ -193,7 +193,7 @@ void mousePressed(){
  
  }else{
    lastMouse = new PVector(mouseX,mouseY);
- brushes.add(new Brush(mouseX,mouseY,comp));
+    brushes.add(new Brush(mouseX,mouseY,comp));
  }
 
 }
