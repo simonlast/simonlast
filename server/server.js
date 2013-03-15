@@ -1,7 +1,14 @@
 
-var connect = require('connect'),
-	gzip = require('connect-gzip');
+/*var connect = require('connect');
 
 connect.createServer(
-  gzip.staticGzip('site')
-).listen(80);
+  connect.static('site')
+).listen(80);*/
+
+var express = require('express');
+
+var app = express();
+
+app.use(express.static('site'));
+
+app.listen(80);
