@@ -45,7 +45,7 @@ body {
   height: 100%;
   width: 100%;
   padding-top: 50px;
-  padding-bottom: 70px;
+  padding-bottom: 0px;
   margin: 0 auto;
 }
 #article {
@@ -162,11 +162,13 @@ body {
 }
 #content p {
   margin: 0 auto;
-  text-align: center;
-  width: 80%;
+  margin-top: 30px;
+  padding: 30px;
+  text-align: left;
   padding-top: 40px;
   font-weight: lighter;
   color: #556270;
+  background-color: #e8e8e8;
 }
 #content a {
   text-decoration: underline;
