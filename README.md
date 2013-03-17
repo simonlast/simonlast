@@ -10,7 +10,7 @@ If you make any changes to the "about" articles:
 
 	sudo node server/bake.js
 
-All of the fun stuff is in site/
+All of the fun stuff is in baked/
 
 
 
