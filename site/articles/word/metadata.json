@@ -1,0 +1,11 @@
+{
+	"title":"Word.",
+	"photos":["words2.png"],
+	"actions":[
+		{
+			"name":"Download - Mac OSX",
+			"url":"/apps/wordgame.zip"
+		}
+	],
+	"created":"May 2, 2012"
+}

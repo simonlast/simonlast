@@ -1,0 +1,19 @@
+{
+	"title":"PathPainer",
+	"photos":["painting1.png", "painting2.png"],
+	"actions":[
+		{
+			"name":"Download Source",
+			"url":"/apps/painter_original.pde"
+		},
+		{
+			"name":"Watch Video 1",
+			"url":"http://www.youtube.com/watch?v=nHpl-y-FPvE"
+		},
+		{
+			"name":"Watch Video 2",
+			"url":"http://www.youtube.com/watch?v=x02jhYHLxHU"
+		}
+	],
+	"created":"Jan 2, 2012"
+}

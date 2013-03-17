@@ -1,0 +1,15 @@
+{
+	"title":"BlockDodge",
+	"photos":["blockdodge2.png"],
+	"actions":[
+		{
+			"name":"Launch",
+			"url":"http://blockdodge.jit.su"
+		},
+		{
+			"name":"Install the Chrome App",
+			"url":"https://chrome.google.com/webstore/detail/ljgjhmdjooeciiffpfmpeolmfobohchf"
+		}
+	],
+	"created":"Dec 12, 2011"
+}

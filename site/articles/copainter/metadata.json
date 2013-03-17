@@ -1,0 +1,15 @@
+{
+	"title":"CoPainter",
+	"photos":["copainter1.png","copainter2.png"],
+	"actions":[
+		{
+			"name":"Launch",
+			"url":"http://paint.jit.su/"
+		},
+		{
+			"name":"Install the Chrome App",
+			"url":"https://chrome.google.com/webstore/detail/ggjgbagmhohfidmolmcjhkihfipgcodi"
+		}
+	],
+	"created":"June 5, 2012"
+}

@@ -1,0 +1,16 @@
+{
+	"title":"Genetic",
+	"photos":["genetic1.png", "genetic2.png"],
+	"actions":[
+		{
+			"name":"Genetic 1",
+			"url":"/apps/genetic1.pde"
+		},
+		{
+			"name":"Genetic 2",
+			"url":"/apps/genetic2.pde"
+		}
+	],
+	"created":"October 1, 2011",
+	"titlePhoto":"genetic2.png"
+}

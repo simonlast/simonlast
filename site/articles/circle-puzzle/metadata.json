@@ -1,0 +1,11 @@
+{
+	"title":"Circle Puzzle",
+	"photos":["circles_screen.png"],
+	"actions":[
+		{
+			"name":"Launch",
+			"url":"/circles"
+		}
+	],
+	"created":"Dec 1, 2011"
+}

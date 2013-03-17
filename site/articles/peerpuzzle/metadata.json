@@ -1,0 +1,14 @@
+{
+	"title":"Peer Puzzle",
+	"photos":["peerpuzzle1.png"],
+	"actions":[
+		{
+			"name":"Launch",
+			"url":"http://peerpuzzle.jit.su"
+		},
+		{
+			"name":"Source",
+			"url":"http://github.com/simonlast/peerpuzzle"
+		}
+	]
+}

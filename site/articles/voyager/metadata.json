@@ -1,0 +1,15 @@
+{
+	"title":"Voyager",
+	"photos":["voyager_screen.png", "voyager_screen2.png"],
+	"actions":[
+		{
+			"name":"Play",
+			"url":"/voyager"
+		},
+		{
+			"name":"Install the Chrome App",
+			"url":"https://chrome.google.com/webstore/detail/ndkdkddpaaiocjpmnkkpnelelkbecjbm"
+		}
+	],
+	"created":"October 15, 2011"
+}

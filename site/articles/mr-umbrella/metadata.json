@@ -1,0 +1,11 @@
+{
+	"title":"Mr. UmbrellaMan",
+	"photos":["crsr_screen2.png"],
+	"actions":[
+		{
+			"name":"Play",
+			"url":"/umbrellaman"
+		}
+	],
+	"created":"May 1, 2011"
+}

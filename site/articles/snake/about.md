@@ -1,0 +1,1 @@
+This is Snake. You know how to play this game.

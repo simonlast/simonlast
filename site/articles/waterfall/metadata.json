@@ -1,0 +1,15 @@
+{
+	"title":"Word Waterfall",
+	"photos":["waterfall1.png", "waterfall2.png"],
+	"actions":[
+		{
+			"name":"Launch",
+			"url":"http://waterfall.jit.su"
+		},
+		{
+			"name":"Source",
+			"url":"http://github.com/simonlast/waterfall"
+		}	
+	],
+	"created":"Mar 5, 2013"
+}

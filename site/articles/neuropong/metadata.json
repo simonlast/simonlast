@@ -1,0 +1,11 @@
+{
+	"title":"NeuroPong",
+	"photos":["neuro.png"],
+	"actions":[
+		{
+			"name":"Download - Mac OSX",
+			"url":"/apps/NeuroPong.app.zip"
+		}
+	],
+	"created":"Feb 1, 2012"
+}

@@ -1,0 +1,16 @@
+{
+	"title":"PlayCreator",
+	"photos":["playcreator2.png", "playcreator3.png", "playcreator.png"],
+	"actions":[
+		{
+			"name":"Launch",
+			"url":"http://playcreator.jit.su"
+		},
+		{
+			"name":"Source & Documentation",
+			"url":"http://github.com/simonlast/playcreator"
+		}
+	],
+	"created":"Feb 12, 2013",
+	"titlePhoto":"playcreator.png"
+}
