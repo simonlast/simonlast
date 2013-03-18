@@ -108,9 +108,23 @@ body {
   margin-top: 15px;
 }
 #article p span {
+  -webkit-backface-visibility: hidden;
+  /* Prevents flickering */
+
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  -ms-transition: all 0.2s ease-in-out;
   color: #f0f0f0;
+  /*color: @highlight-color;*/
+
   text-decoration: none;
 }
+/*#article:hover{
+    span{
+        color: @text-col;
+    }
+}*/
 #back {
   position: absolute;
   top: 40px;
