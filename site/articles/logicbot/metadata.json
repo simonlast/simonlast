@@ -1,0 +1,15 @@
+{
+	"title":"LogicBot",
+	"photos":["logicbot1.png", "logicbot2.png", "logicbot3.png", "logicbot4.png"],
+	"actions":[
+		{
+			"name":"Launch",
+			"url":"http://logicbot.jit.su"
+		},
+		{
+			"name":"Source",
+			"url":"http://github.com/simonlast/logicbot"
+		}	
+	],
+	"created":"Apr 11, 2013"
+}

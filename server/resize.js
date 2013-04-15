@@ -2,7 +2,7 @@ var fs = require('fs-extra');
 var easyimg = require('easyimage');
 
 var resizeImages = function(){
- 	var base = 'site/screens/';
+ 	var base = 'baked/screens/';
  	var images = fs.readdirSync(base);
 
  	fs.removeSync(base + "thumbs");
