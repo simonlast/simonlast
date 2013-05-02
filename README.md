@@ -1,6 +1,11 @@
 
 #[simonlast.org](http://simonlast.org)
-###This is my personal site. Feel free to take anything!
+###This is my personal site.
+
+==============
+
+Everything is under a Creative Commons License. See README for details.
+
 
 The server is written in Node.js. To run it, type:
 
