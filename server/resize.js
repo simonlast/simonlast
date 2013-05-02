@@ -15,7 +15,7 @@ var resizeImages = function(){
  		easyimg.resize(
 		  {
 		     src: base + curr, dst: base + 'thumbs/' + curr,
-		     width:375
+		     width:400
 		     },
 		  function(err, image) {
 		     console.log(image.name + ' cropped: ' + image.width + ' x ' + image.height);

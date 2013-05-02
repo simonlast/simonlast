@@ -9,7 +9,11 @@
 		{
 			"name":"Source",
 			"url":"http://github.com/simonlast/logicbot"
-		}	
+		},
+		{
+			"name":"About",
+			"url":"http://logicbot.jit.su/about/"
+		}		
 	],
 	"created":"Apr 11, 2013"
 }
