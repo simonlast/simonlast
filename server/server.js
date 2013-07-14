@@ -5,7 +5,7 @@ var oneDay = 86400000;
 
 connect(
   connect.static('baked/', { maxAge: oneDay })
-).listen(80);
+).listen(process.argv[2] || 80);
 
 /*
 var express = require('express');
