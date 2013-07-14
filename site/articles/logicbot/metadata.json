@@ -4,16 +4,12 @@
 	"actions":[
 		{
 			"name":"Launch",
-			"url":"http://logicbot.jit.su"
+			"url":"/logicbot"
 		},
 		{
 			"name":"Source",
 			"url":"http://github.com/simonlast/logicbot"
-		},
-		{
-			"name":"About",
-			"url":"http://logicbot.jit.su/about/"
-		}		
+		}
 	],
 	"created":"Apr 11, 2013"
 }
