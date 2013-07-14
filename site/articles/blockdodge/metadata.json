@@ -4,11 +4,7 @@
 	"actions":[
 		{
 			"name":"Launch",
-			"url":"http://blockdodge.simonlast.org"
-		},
-		{
-			"name":"Install the Chrome App",
-			"url":"https://chrome.google.com/webstore/detail/ljgjhmdjooeciiffpfmpeolmfobohchf"
+			"url":"/blockdodge"
 		}
 	],
 	"created":"Dec 12, 2011"
