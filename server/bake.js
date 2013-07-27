@@ -21,7 +21,7 @@ var projects = [];
 var buildHome = function(){
 
 	//up to 14 on homepage
-	var newProjects = projects.splice(0, 14);
+	var newProjects = projects.splice(0, 12);
 
 	//home
 	var compiled = templates['index.html']({"projects":newProjects});
