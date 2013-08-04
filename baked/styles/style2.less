@@ -17,6 +17,13 @@
     -ms-transition: all @time ease-in-out;
 }
 
+.grayscale (@percent: 100%){ 
+  filter: grayscale(@percent);
+  -webkit-filter: grayscale(@percent);
+  -moz-filter: grayscale(@percent);
+  filter: grayscale(@percent);
+}
+
 .scale (@amount: 1.04){	 
 	-webkit-transform: scale( @amount );
     -moz-transform: scale( @amount );
@@ -101,6 +108,9 @@ body {
 		opacity: 1;
 		.shadow(20px);
 		.scale;
+    // img{
+    //   .grayscale(0%);
+    // }
 	}
 	
 	a:active{
@@ -114,7 +124,8 @@ body {
 		max-width:350px;
 		.rounded-corners(5px);
 		.shadow(10px);
-		
+    // .grayscale(30%);
+    .ease;
 	}
 	
 	p{

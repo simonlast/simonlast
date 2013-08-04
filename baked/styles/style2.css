@@ -111,6 +111,13 @@ body {
   -webkit-box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.25);
   -moz-box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.25);
   box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.25);
+  -webkit-backface-visibility: hidden;
+  /* Prevents flickering */
+
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  -ms-transition: all 0.2s ease-in-out;
 }
 #article p {
   text-align: center;
@@ -225,13 +232,6 @@ body {
 }
 #buttons li {
   padding: 20px;
-  -webkit-backface-visibility: hidden;
-  /* Prevents flickering */
-
-  -webkit-transition: all 0.2s ease-in-out;
-  -moz-transition: all 0.2s ease-in-out;
-  -o-transition: all 0.2s ease-in-out;
-  -ms-transition: all 0.2s ease-in-out;
   display: inline-block;
   background-color: #556270;
   color: #f0f0f0;
