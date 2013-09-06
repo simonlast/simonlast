@@ -1,0 +1,16 @@
+{
+	"title":"Storybook",
+	"photos":["storybook1.png"],
+	"actions":[
+		{
+			"name":"Launch",
+			"url":"http://storybook.simonlast.org"
+		},
+		{
+			"name":"Source",
+			"url":"http://github.com/simonlast/storybook"
+		}
+	],
+	"created":"Aug 24, 2013",
+	"titlePhoto": "storybook2.png"
+}
