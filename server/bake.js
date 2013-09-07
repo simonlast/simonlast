@@ -42,6 +42,11 @@ var buildArticle = function(name){
 	var metadata = JSON.parse(metadata);
 	
 	metadata.url = '/' + name;
+	if(metadata.actions && metadata.actions.length > 0){
+		metadata.mainUrl = metadata.actions[0].url;
+	}else{
+		metadata.mainUrl = "#";
+	}
 
 	if(!metadata.titlePhoto)
 		metadata.titlePhoto = metadata.photos[0];

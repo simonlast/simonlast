@@ -31,11 +31,13 @@
 		
 		<div id="articleContainer">
 		<div id="content">
-			<ul class="rslides">
-				{{#each photos}}
-  					<li><img src="/screens/{{this}}" alt="" /></li>
-				{{/each}}
-			</ul>
+      <a href="{{mainUrl}}">
+  			<ul class="rslides">
+  				{{#each photos}}
+    					<li><img src="/screens/{{this}}" alt="" /></li>
+  				{{/each}}
+  			</ul>
+      </a>
 
 			<div class="about">
 				{{{about}}}

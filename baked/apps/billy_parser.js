@@ -117,7 +117,7 @@ $('#terminal').terminal(function(command, term) {
             }
         }
     }, {
-        greetings: 'Hello! Type \'help\' if you feel lost.',
+        greetings: 'Hello! Type \'help\' for instructions.',
         name: 'langterminal',
         height: terminalHeight,
         width: window.innerWidth,
