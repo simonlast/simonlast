@@ -7,8 +7,12 @@
 			"url":"http://storybook.simonlast.org"
 		},
 		{
-			"name":"Source and Documentation",
+			"name":"Source",
 			"url":"http://github.com/simonlast/storybook"
+		},
+		{
+			"name":"Documentation",
+			"url":"http://github.com/simonlast/storybook/blob/master/Documentation.md"
 		}
 	],
 	"created":"Aug 24, 2013",
