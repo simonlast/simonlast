@@ -17,14 +17,14 @@
     -ms-transition: all @time ease-in-out;
 }
 
-.grayscale (@percent: 100%){ 
+.grayscale (@percent: 100%){
   filter: grayscale(@percent);
   -webkit-filter: grayscale(@percent);
   -moz-filter: grayscale(@percent);
   filter: grayscale(@percent);
 }
 
-.scale (@amount: 1.04){	 
+.scale (@amount: 1.04){
 	-webkit-transform: scale( @amount );
     -moz-transform: scale( @amount );
     -o-transform: scale( @amount );
@@ -54,7 +54,7 @@ body {
   padding-left: 50px;
   display: inline-block;
   font-family: 'Helvetica';
-  
+
 
   a{
 	 font-size: 100px;
@@ -64,14 +64,14 @@ body {
 	 text-decoration:none;
 	 opacity: .8;
 	 .ease;
-	
+
 	}
-	
+
   a:hover{
 	opacity: 1;
 	.shadow(10px);
 }
-  
+
 
 }
 
@@ -86,7 +86,7 @@ body {
 #article{
 	.ease(.3s);
 
-	
+
 	a{
 		margin: 10px;
 		padding: 10px;
@@ -103,7 +103,7 @@ body {
 		.ease;
 		opacity: .9;
 	}
-	
+
 	a:hover{
 		opacity: 1;
 		.shadow(20px);
@@ -112,13 +112,13 @@ body {
     //   .grayscale(0%);
     // }
 	}
-	
+
 	a:active{
 		opacity: 1;
 		.shadow(20px);
 		.scale(1);
 	}
-	
+
 
 	img{
 		max-width:350px;
@@ -127,20 +127,20 @@ body {
     // .grayscale(30%);
     .ease;
 	}
-	
+
 	p{
 
 		//position:absolute;
 		text-align: center;
 		margin:5px;
 		margin-top:15px;
-		
+
 		span{
 			.ease;
 			color: @text-col;
 			/*color: @highlight-color;*/
 			text-decoration:none;
-			 
+
 		}
 
 
@@ -159,8 +159,8 @@ body {
 	top:40px;
 	left: 50px;
 	font-family: 'Helvetica';
-	
-	
+
+
 	a{
 		color: @text-col;
 	  	text-decoration: none;
@@ -168,9 +168,9 @@ body {
 	  	.ease;
 		font-size: 50px;
 		opacity: .8;
-		
+
 	}
-	
+
 	a:hover{
 		opacity:1;
 		.shadow(10px);
@@ -194,25 +194,25 @@ body {
 	.shadow(15px);*/
 	.ease;
 	text-align: center;
-	
+
 	a{
 		text-decoration: underline;
 		color: @divcol;
 	}
-	
+
 	img{
 		border: 10px solid @divcol;
 		.rounded-corners(5px);
 		.shadow(10px);
-		
+
 		padding:none;
 		margin:none;
 		display: inline-block;
 		position:fixed relative;
 		overflow: auto;
 	}
-	
-	
+
+
 }
 
 .about{
@@ -223,7 +223,7 @@ body {
 		font-weight: lighter;
 		color: @divcol;
 		background-color: darken(@bkg,5%);
-		
+
 		a{
 			text-decoration: underline;
 			color: @divcol;
@@ -232,14 +232,14 @@ body {
 		p{
 		    margin:15px;
 		}
-		
+
 	}
 
 #buttons{
 	list-style-type: none;
 	text-align: left;
-	
-	
+
+
 	li{
 		padding:20px;
 		.ease;
@@ -247,19 +247,19 @@ body {
 	 	background-color: @divcol;
 		color: @text-col;
 		.rounded-corners(5px);
-	
+
 		.ease;
 		margin: 20px;
-		
+
 		a{
 			text-decoration:none;
 			color: @text-col;
-			
+
 		}
-		
+
 
 	}
-	
+
 	li:hover{
 		.scale(1.05);
 		.shadow(10px);
@@ -274,27 +274,31 @@ body {
   max-width:600px;
   padding: 40px;
 
-  a {
-	color: @text-col;
+  a, input[type='submit'] {
+    font-family: Helvetica;
+    font-weight: lighter;
+    color: @text-col;
   	text-decoration: none;
   	background-color:@highlight-color;
   	.ease;
-	font-size: 50px;
-	padding:5px;
-	margin:2px;
-	padding-bottom:8px;
-	line-height:82px;
-	opacity:.8;
-	
+  	font-size: 50px;
+  	padding:5px;
+  	margin:2px;
+  	padding-bottom:8px;
+  	line-height:82px;
+  	opacity:.8;
+    border: none;
+    outline: none;
+    cursor: pointer;
   }
 
-	a:hover{
+	a:hover, input[type='submit']:hover{
 		opacity:1;
 		.shadow(10px);
 	}
 }
 
-#facebook:hover{	
+#facebook:hover{
 	background-color:rgb(0,115,178);
 	color: rgb(240,240,240);
 }
@@ -302,7 +306,7 @@ body {
 #twitter:hover{
 	background-color:rgb(0,193,241);
 	color: rgb(240,240,240);
-	
+
 }
 
 #email:hover{
@@ -318,7 +322,7 @@ body {
 #quora:hover{
 	background-color:rgb(155,33,0);
 	color: rgb(240,240,240);
-	
+
 }
 
 #website:hover{
@@ -363,7 +367,7 @@ body {
   display: block;
   height: auto;
   max-width: 92%;
-  
+
   max-height: 500px;
   border: 0;
 }
@@ -396,7 +400,7 @@ body {
 	padding-bottom:8px;
 	line-height:82px;
 	opacity:.8;
-	
+
   }
 
 	a:hover{

@@ -265,7 +265,10 @@ body {
   max-width: 600px;
   padding: 40px;
 }
-#footer a {
+#footer a,
+#footer input[type='submit'] {
+  font-family: Helvetica;
+  font-weight: lighter;
   color: #f0f0f0;
   text-decoration: none;
   background-color: #556270;
@@ -282,8 +285,12 @@ body {
   padding-bottom: 8px;
   line-height: 82px;
   opacity: .8;
+  border: none;
+  outline: none;
+  cursor: pointer;
 }
-#footer a:hover {
+#footer a:hover,
+#footer input[type='submit']:hover {
   opacity: 1;
   -webkit-box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.25);
   -moz-box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.25);
