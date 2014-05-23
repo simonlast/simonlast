@@ -14,9 +14,10 @@
 			<h1>Simon Last</h1>
 
 			<div class="controls">
-				<div class="control-option active" data-filter="">All</div>
+				<div class="control-option active">All</div>
 				<div class="control-option" data-filter="project">Projects</div>
 				<div class="control-option" data-filter="post">Posts</div>
+				<div class="control-option" data-filter="about">About</div>
 			</div>
 		</div>
 
@@ -324,6 +325,14 @@
 
 			</div>
 
+			<div class="about">
+				<a class="email" data-email="uryyb@fvzbaynfg.bet" onclick="convert(this)" onmouseover="convert(this)" href="/email">uryyb@fvzbaynfg.bet</a>
+        <a class="website" href="http://photos.simonlast.org">photos</a>
+				<a class="twitter" href="http://twitter.com/simonlast">twitter</a>
+				<a class="github" href="http://github.com/simonlast">github</a>
+			</div>
+
+
 		</div>
 
 			<script type="text/javascript">
@@ -345,6 +354,26 @@
 						itemContainer.dataset.filter = option.dataset.filter;
 					}
 				});
+
+				var az = "abcdefghijklmnopqrstuvwxyzabcdefghijklmABCDEFGHIJKLMNOPQRSTUVWXYZABCDEFGHIJKLM";
+
+				var convert = function(el){
+					var converted = dcpt(el.getAttribute("data-email"));
+					el.href = "mailto:" + converted;
+					el.innerHTML = converted;
+				};
+
+				var dcpt = function(text) {
+		      for (var r = "", i = 0; i < text.length; i++) {
+	          var chr = text.charAt(i);
+	          var position = az.indexOf(chr);
+	          if (position > -1) {
+	            chr = az.charAt(position + 13);
+	          }
+	          r += chr;
+		      }
+		      return r;
+	    	};
 			</script>
 
 	</body>

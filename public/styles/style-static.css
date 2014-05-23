@@ -39,7 +39,7 @@ body {
 	margin: 4px;
 	cursor: pointer;
 	opacity: 0.9;
-	-webkit-transition: all 140ms ease-in-out;
+	-webkit-transition: all 60ms ease-in-out;
 }
 
 .control-option:hover, .control-option.active {
@@ -53,6 +53,27 @@ body {
 
 .items[data-filter='post'] > *:not(.post) {
 	display: none;
+}
+
+.items[data-filter='about'] > * {
+	display: none;
+}
+
+
+/*
+	About
+*/
+
+.about {
+	margin-bottom: 72px;
+	text-align: center;
+}
+
+.about a{
+	display: block;
+	color: rgb(60,60,60);
+	font-size: 1.5em;
+	margin-bottom: 8px;
 }
 
 
@@ -70,7 +91,6 @@ body {
 }
 
 .item{
-	display: inline-block;
 	margin-bottom: 72px;
 	opacity: 0.9;
 	-webkit-transition: all 140ms ease-in-out;
