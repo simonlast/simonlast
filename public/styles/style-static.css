@@ -71,9 +71,14 @@ body {
 
 .about a{
 	display: block;
+	text-decoration: none;
 	color: rgb(60,60,60);
 	font-size: 1.5em;
 	margin-bottom: 8px;
+}
+
+.about a:hover{
+	text-decoration: underline;
 }
 
 
