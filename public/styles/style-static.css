@@ -96,6 +96,7 @@ body {
 }
 
 .item{
+	display: inline-block;
 	margin-bottom: 72px;
 	opacity: 0.9;
 	-webkit-transition: all 140ms ease-in-out;
@@ -103,6 +104,7 @@ body {
 
 .item:hover{
 	opacity: 1;
+	-webkit-transform: translateY(-4px);
 }
 
 .item a {
@@ -118,6 +120,7 @@ body {
 	-webkit-transition: all 140ms ease-in-out;
 	max-width: 400px;
 	border: 4px solid rgb(235,235,235);
+	border-radius: 4px;
 }
 
 .item .item-description{
@@ -133,7 +136,7 @@ body {
 	Posts
 */
 
-.post{
+.about-post{
 	padding-bottom: 128px;
 	margin: 0 24px;
 }
@@ -152,7 +155,12 @@ body {
 	font-size: 1.2em;
 	display: block;
 	color: rgb(70,70,70);
-	padding: 2px 0;
+	padding: 4px 0;
+	text-decoration: none;
+}
+
+.post-links a:hover{
+	text-decoration: underline;
 }
 
 
