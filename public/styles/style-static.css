@@ -1,6 +1,5 @@
 body {
-	max-width: 600px;
-	margin: 0 auto;
+	margin: 0;
 	color: rgb(70,70,70);
 	font-family: "museo-sans", sans-serif;
 }
@@ -88,6 +87,8 @@ body {
 
 .content{
 	padding-bottom: 128px;
+	max-width: 600px;
+	margin: 0 auto;
 }
 
 .items {
@@ -136,14 +137,51 @@ body {
 	Posts
 */
 
-.about-post{
+.about-content{
+	position: relative;
+	z-index: 100;
+	max-width: 600px;
+	margin: 0 auto;
+	padding-left: 24px;
+	padding-right: 24px;
 	padding-bottom: 128px;
-	margin: 0 24px;
 }
 
-.post-image img{
+.about-header{
 	max-width: 100%;
-	border: 4px solid rgb(235,235,235);
+	font-size: 3em;
+	text-align: center;
+	padding: 0 32px;
+}
+
+.about-post{
+}
+
+.post-image {
+	max-height: 600px;
+	overflow: hidden;
+	position: relative;
+	text-align: center;
+	margin-bottom: -20%;
+}
+
+.post-image::before{
+  position: absolute;
+  z-index: 10;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  content: "";
+	background-image:
+    linear-gradient(
+      rgba(255,255,255,0), rgba(255,255,255,1)
+    );
+}
+
+
+.post-image img{
+	width: 100%;
 }
 
 .post-text {
