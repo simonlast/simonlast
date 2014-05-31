@@ -1,9 +1,9 @@
-var _          = require("lodash");
-var path       = require("path");
-var fs         = require("fs");
-var handlebars = require("handlebars");
-var Promise    = require("promise");
-
+var _             = require("lodash");
+var path          = require("path");
+var fs            = require("fs-extra");
+var handlebars    = require("handlebars");
+var Promise       = require("promise");
+var markdown      = require("markdown").markdown;
 
 var rootDir       = path.join(__dirname, "..");
 var publicRootDir = path.join(rootDir, "public");
@@ -55,7 +55,8 @@ var getArticleData = function(articleName){
 				metadata.titlePhoto = metadata.photos[0];
 			}
 
-			metadata.url = articleName;
+			metadata.mainPhoto = metadata.photos[0];
+			metadata.url = articleName.toLowerCase();
 
 			fs.readFile(articleAboutFile, "utf8", function(err, about){
 				// About file does not exist.
@@ -63,7 +64,7 @@ var getArticleData = function(articleName){
 					return resolve(metadata);
 				}
 
-				metadata.about = about;
+				metadata.about = markdown.toHTML(about);
 				return resolve(metadata);
 			});
 
@@ -83,14 +84,15 @@ var compile = function(templateFile, templateData, outFile){
 			var template = handlebars.compile(template);
 			var compiled = template(templateData);
 
-			console.log("compiled: ", compiled);
+			fs.ensureFile(outFile, function(err){
+				fs.writeFile(outFile, compiled, "utf8", function(err){
+					if(err){
+						return reject(err);
+					}
 
-			fs.writeFile(outFile, compiled, "utf8", function(err){
-				if(err){
-					return reject(err);
-				}
-
-				resolve();
+					console.log("compiled: ", outFile);
+					resolve();
+				});
 			});
 		});
 	});
@@ -121,19 +123,35 @@ var compileIndex = function(){
 };
 
 
+compileArticle = function(articleName){
+	return new Promise(function(resolve, reject){
+		getArticleData(articleName).then(function(articleData){
+			var templateFile = path.join(templatesDir, "article.html");
+			var outFile      = path.join(publicRootDir, "about", articleName, "index.html");
+			var compiled     = compile(templateFile, articleData, outFile);
+
+			compiled.then(resolve);
+			compiled.catch(reject);
+		});
+	});
+};
+
+
 var compileArticles = function(){
 	return new Promise(function(resolve, reject){
 		getArticles().then(function(articles){
 
-			var compiledAll = _.map(articles, function(){
-
+			var compiledAll = _.map(articles, function(article){
+				return compileArticle(article.url);
 			});
+			var allDone = Promise.all(compiledAll);
 
+			allDone.then(resolve);
+			allDone.catch(reject);
 		});
 	});
-
 };
 
 
-compileIndex();
-compileArticles();
+compileIndex().done();
+compileArticles().done();

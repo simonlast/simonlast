@@ -17,7 +17,7 @@
 	<body>
 
 		<div class="post-image">
-			<img src="{{/screens/photos[0]}}" alt="" />
+			<img src="/screens/{{mainPhoto}}" alt="" />
 		</div>
 
 		<div class="about-content">
@@ -29,12 +29,12 @@
 			<div class="about-post">
 
 				<div class="post-text">
-					{{about}}
+					{{{about}}}
 				</div>
 
 				<div class="post-links">
 					{{#each actions}}
-						<a href="{{this.url}}"><li>{{this.name}}</li></a>
+						<a href="{{this.url}}">{{this.name}}</a>
 					{{/each}}
 				</div>
 			</div>

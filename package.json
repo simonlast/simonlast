@@ -14,6 +14,7 @@
   },
   "dependencies": {
     "connect": "2.7.x",
+    "fs-extra": "^0.9.1",
     "handlebars": "^2.0.0-alpha.4",
     "lodash": "^2.4.1",
     "moment": "^2.6.0",
