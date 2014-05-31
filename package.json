@@ -1,0 +1,22 @@
+{
+  "name": "simonlast",
+  "subdomain": "simonlast",
+  "domains": [
+    "simonlast.org",
+    "www.simonlast.org"
+  ],
+  "scripts": {
+    "start": "node ./server/server.js"
+  },
+  "version": "0.2.0-12",
+  "engines": {
+    "node": "0.8.x"
+  },
+  "dependencies": {
+    "connect": "2.7.x",
+    "handlebars": "^2.0.0-alpha.4",
+    "lodash": "^2.4.1",
+    "moment": "^2.6.0",
+    "promise": "^5.0.0"
+  }
+}
