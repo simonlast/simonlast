@@ -1,7 +1,8 @@
 {
 	"title":"PlayCreator",
-	"photos":["playcreator2.png", "playcreator3.png", "playcreator.png"],
-	"actions":[
+	"photo": "playcreator2.png",
+	"thumb": "playcreator2.png",
+	"links":[
 		{
 			"name":"Launch",
 			"url":"http://playcreator.simonlast.org"

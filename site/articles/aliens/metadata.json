@@ -1,6 +1,6 @@
 {
 	"title":"Aliens",
-	"photos":["aliens1.png"],
+	"thumb": "aliens1.png",
 	"created":"Dec 12, 2010",
 	"noAbout":true
 }

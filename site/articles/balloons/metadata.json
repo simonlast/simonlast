@@ -1,7 +1,8 @@
 {
 	"title":"HCIL Balloons",
-	"photos":["balloons1.png","balloons2.png"],
-	"actions":[
+	"thumb": "balloons1.png",
+	"photo": "balloons1.png",
+	"links":[
 		{
 			"name":"Source",
 			"url":"http://github.com/simonlast/hcil-balloons"

@@ -1,6 +1,6 @@
 {
 	"title":"Ballpit",
-	"photos":["bouncy1.png"],
+	"thumb": "bouncy1.png",
 	"created":"Dec 12, 2010",
 	"noAbout":true
 }

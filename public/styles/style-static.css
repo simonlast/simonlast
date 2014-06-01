@@ -41,7 +41,7 @@ body {
 	margin: 4px;
 	cursor: pointer;
 	opacity: 0.9;
-	-webkit-transition: all 60ms ease-in-out;
+	transition: all 60ms ease-in-out;
 }
 
 .index .control-option:hover, .control-option.active {
@@ -103,7 +103,7 @@ body {
 	display: inline-block;
 	margin-bottom: 72px;
 	opacity: 0.9;
-	-webkit-transition: all 140ms ease-in-out;
+	transition: all 140ms ease-in-out;
 }
 
 .index .item:hover{
@@ -118,7 +118,7 @@ body {
 }
 
 .index .item img{
-	-webkit-transition: all 140ms ease-in-out;
+	transition: all 140ms ease-in-out;
 	max-width: 400px;
 	border: 4px solid rgb(235,235,235);
 	border-radius: 4px;
@@ -177,6 +177,10 @@ body {
 
 .article .content p{
 	font-size: 1.2em;
+}
+
+.article .content a{
+	color: inherit;
 }
 
 .article .links a{

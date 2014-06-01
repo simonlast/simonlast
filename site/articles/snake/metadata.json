@@ -1,7 +1,8 @@
 {
 	"title":"Snaake",
-	"photos":["snaake1.png", "snake1.png"],
-	"actions":[
+	"photo": "snaake1.png",
+	"thumb": "snaake1.png",
+	"links":[
 		{
 			"name":"Download - Mac OSX",
 			"url":"/apps/snaake.app.zip"

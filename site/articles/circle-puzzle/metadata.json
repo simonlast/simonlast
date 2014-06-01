@@ -1,7 +1,8 @@
 {
 	"title":"Circle Puzzle",
-	"photos":["circles_screen.png"],
-	"actions":[
+	"photo": "circles_screen.png",
+	"thumb": "circles_screen.png",
+	"links":[
 		{
 			"name":"Launch",
 			"url":"/circles"

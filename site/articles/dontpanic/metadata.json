@@ -1,7 +1,8 @@
 {
 	"title":"Don't Panic",
-	"photos":["panic2.png"],
-	"actions":[
+	"photo": "panic2.png",
+	"thumb": "panic2.png",
+	"links":[
 		{
 			"name":"Play",
 			"url":"/dontpanic"

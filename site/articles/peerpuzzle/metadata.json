@@ -1,7 +1,8 @@
 {
 	"title":"Peer Puzzle",
-	"photos":["peerpuzzle1.png"],
-	"actions":[
+	"photo": "peerpuzzle1.png",
+	"thumb": "peerpuzzle1.png",
+	"links":[
 		{
 			"name":"Launch",
 			"url":"http://peerpuzzle.simonlast.org"

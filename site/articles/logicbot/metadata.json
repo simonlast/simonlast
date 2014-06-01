@@ -1,7 +1,8 @@
 {
 	"title":"LogicBot",
-	"photos":["logicbot1.png", "logicbot2.png", "logicbot3.png", "logicbot4.png"],
-	"actions":[
+	"photo": "logicbot1.png",
+	"thumb": "logicbot1.png",
+	"links":[
 		{
 			"name":"Launch",
 			"url":"/logicbot"

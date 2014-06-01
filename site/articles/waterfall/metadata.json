@@ -1,7 +1,8 @@
 {
 	"title":"Word Waterfall",
-	"photos":["waterfall1.png", "waterfall2.png"],
-	"actions":[
+	"photo": "waterfall1.png",
+	"thumb": "waterfall1.png",
+	"links":[
 		{
 			"name":"Launch",
 			"url":"http://waterfall.simonlast.org"
@@ -9,7 +10,7 @@
 		{
 			"name":"Source",
 			"url":"http://github.com/simonlast/waterfall"
-		}	
+		}
 	],
 	"created":"Mar 5, 2013"
 }

@@ -1,7 +1,8 @@
 {
 	"title":"Genetic",
-	"photos":["genetic1.png", "genetic2.png"],
-	"actions":[
+	"thumb": "genetic1.png",
+	"photo": "genetic1.png",
+	"links":[
 		{
 			"name":"Genetic 1",
 			"url":"/apps/genetic1.pde"

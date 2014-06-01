@@ -1,7 +1,8 @@
 {
 	"title":"CoPainter",
-	"photos":["copainter1.png","copainter2.png"],
-	"actions":[
+	"photo": "copainter1.png",
+	"thumb": "copainter1.png",
+	"links":[
 		{
 			"name":"Launch",
 			"url":"http://paint.simonlast.org/"

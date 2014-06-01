@@ -16,7 +16,7 @@
 	<body class="article">
 
 		<div class="background-image">
-			<img src="/screens/{{mainPhoto}}" alt="" />
+			<img src="/screens/{{photo}}" alt="" />
 		</div>
 
 		<div class="header">
@@ -30,8 +30,8 @@
 				</div>
 
 				<div class="links">
-					{{#each actions}}
-						<a href="{{this.url}}">{{this.name}}</a>
+					{{#each links}}
+						<a href="{{this.url}}">{{this.title}}</a>
 					{{/each}}
 				</div>
 			</div>

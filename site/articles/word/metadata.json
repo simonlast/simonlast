@@ -1,7 +1,8 @@
 {
 	"title":"Word.",
-	"photos":["words2.png"],
-	"actions":[
+	"photo": "words2.png",
+	"thumb": "words2.png",
+	"links":[
 		{
 			"name":"Download - Mac OSX",
 			"url":"/apps/wordgame.zip"

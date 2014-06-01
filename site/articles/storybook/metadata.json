@@ -1,7 +1,8 @@
 {
 	"title":"Storybook",
-	"photos":["storybook1.png"],
-	"actions":[
+	"photo": "storybook1.png",
+	"thumb": "storybook3.png",
+	"links":[
 		{
 			"name":"Launch",
 			"url":"http://storybook.simonlast.org"

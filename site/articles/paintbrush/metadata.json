@@ -1,15 +1,6 @@
 {
 	"title":"Paintbrush",
-	"photos":["paintbrushscreen1.png", "paintbrushscreen3.jpeg", "paintbrushscreen4.jpeg"],
-	"actions":[
-		{
-			"name":"Launch",
-			"url":"/paintbrush"
-		},
-		{
-			"name":"Install the Chrome App",
-			"url":"https://chrome.google.com/webstore/detail/benliocpgpijioclmdjjjjgmimgeodad"
-		}
-	],
-	"created":"May 3, 2012"
+	"thumb": "paintbrushscreen1.png",
+	"created":"May 3, 2012",
+	"noAbout": true
 }

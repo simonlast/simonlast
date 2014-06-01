@@ -50,13 +50,13 @@ var getArticleData = function(articleName){
 			}
 
 			var metadata = JSON.parse(metadata);
+			metadata.name = articleName;
 
-			if(!metadata.titlePhoto){
-				metadata.titlePhoto = metadata.photos[0];
+			if(metadata.noAbout){
+				metadata.url = articleName;
+			}else{
+				metadata.url = "/about/" + articleName;
 			}
-
-			metadata.mainPhoto = metadata.photos[0];
-			metadata.url = articleName.toLowerCase();
 
 			fs.readFile(articleAboutFile, "utf8", function(err, about){
 				// About file does not exist.
@@ -140,9 +140,13 @@ compileArticle = function(articleName){
 var compileArticles = function(){
 	return new Promise(function(resolve, reject){
 		getArticles().then(function(articles){
+			articles = _.filter(articles, function(article){
+				return !article.noAbout;
+			});
+
 
 			var compiledAll = _.map(articles, function(article){
-				return compileArticle(article.url);
+				return compileArticle(article.name);
 			});
 			var allDone = Promise.all(compiledAll);
 

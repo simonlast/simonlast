@@ -1,7 +1,8 @@
 {
 	"title":"PathPainter",
-	"photos":["painting1.png", "painting2.png"],
-	"actions":[
+	"photo": "painting1.png",
+	"thumb": "painting1.png",
+	"links":[
 		{
 			"name":"Download Source",
 			"url":"/apps/painter_original.pde"

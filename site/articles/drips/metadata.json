@@ -1,6 +1,7 @@
 {
 	"title":"Drips",
-	"photos":["drips1.png"],
+	"photo": "drips1.png",
+	"thumb": "drips1.png",
 	"created":"Dec 12, 2010",
 	"noAbout":true
 }

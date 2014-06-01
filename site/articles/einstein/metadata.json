@@ -1,6 +1,7 @@
 {
 	"title":"Einstein",
-	"photos":["einstein1.png"],
+	"photo": "einstein1.png",
+	"thumb": "einstein1.png",
 	"created":"Dec 12, 2010",
 	"noAbout":true
 }

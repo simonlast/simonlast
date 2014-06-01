@@ -1,7 +1,8 @@
 {
 	"title":"Sprouts",
-	"photos":["sprouts_screen.png"],
-	"actions":[
+	"photo": "sprouts_screen.png",
+	"thumb": "sprouts_screen.png",
+	"links":[
 		{
 			"name":"Download - Mac OSX",
 			"url":"/apps/Sprouts.zip"

@@ -1,11 +1,6 @@
 {
 	"title":"BlockDodge",
-	"photos":["blockdodge2.png"],
-	"actions":[
-		{
-			"name":"Launch",
-			"url":"/blockdodge"
-		}
-	],
-	"created":"Dec 12, 2011"
+	"thumb": "blockdodge2.png",
+	"created":"Dec 12, 2011",
+	"noAbout": true
 }
