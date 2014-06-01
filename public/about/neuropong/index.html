@@ -42,59 +42,5 @@
 
 		</div>
 
-		<script type="text/javascript">
-
-			var backgroundImage = document.querySelector(".background-image img");
-
-			var loadBackground = function(){
-
-				var canvas = document.createElement("canvas");
-				canvas.width = backgroundImage.width;
-				canvas.height = backgroundImage.height;
-
-				var ctx = canvas.getContext("2d");
-				ctx.drawImage(backgroundImage, 0, 0, backgroundImage.width, backgroundImage.height);
-				// var color = getVerticalLineAverage(ctx, 0, backgroundImage.height);
-				var color = getPixel(ctx, 0, 0);
-				var imageContainer = document.querySelector(".background-image")
-
-				var cssColor = "rgba(" + color[0] + "," + color[1] + "," + color[2] + "," + color[3] + ")";
-
-				console.log("cssColor: ", cssColor);
-
-				imageContainer.style["background-color"] = cssColor
-
-			};
-
-			getVerticalLineAverage = function(ctx, x, height){
-				var average = [0, 0, 0, 0];
-
-				for(var y=0; y<height; y++){
-					var pixel = getPixel(ctx, x, y);
-
-					for (var i = pixel.length - 1; i >= 0; i--) {
-						average[i] += pixel[i];
-					};
-				};
-
-				for (var i = average.length - 1; i >= 0; i--) {
-					average[i] /= height;
-					average[i] = Math.floor(average[i]);
-				};
-
-				return average;
-			};
-
-			getPixel = function(ctx, x, y){
-				return ctx.getImageData(x, y, 1, 1).data;
-			};
-
-			backgroundImage.addEventListener("load", loadBackground);
-			if(backgroundImage.complete){
-				loadBackground();
-			}
-
-		</script>
-
 	</body>
 </html>
