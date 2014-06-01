@@ -4,7 +4,6 @@
 		<meta charset="utf-8" />
 		<title>LogicBot</title>
 		<meta name="author" content="Simon Last" />
-		<meta name="viewport" content="width=device-width; initial-scale=0.5" />
 		<meta name="twitter:card" content="photo">
   	<meta name="twitter:creator" content="@simonlast">
   	<meta name="twitter:title" content="LogicBot">
@@ -14,27 +13,25 @@
 		<script type="text/javascript" src="//use.typekit.net/suk0ird.js"></script>
 		<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
 	</head>
-	<body>
+	<body class="article">
 
-		<div class="post-image">
+		<div class="background-image">
 			<img src="/screens/logicbot1.png" alt="" />
 		</div>
 
-		<div class="about-content">
+		<div class="header">
+			<h1>LogicBot</h1>
+		</div>
 
-			<div class="about-header">
-				<h1>LogicBot</h1>
-			</div>
+		<div class="content">
 
-			<div class="about-post">
-
-				<div class="post-text">
+				<div class="about-text">
 					<p>LogicBot is a web-based logical programming environment.</p>
 
 <p>A LogicBot program is a kinetic creature composed of a logical circuit. By placing and connecting simple components, the user can control the behavior of the creature, programming it to move in different ways. By allowing the user to create and interact with the program in the same place, feedback becomes instantaneous, advocating a playful and exploratory creative process.</p>
 				</div>
 
-				<div class="post-links">
+				<div class="links">
 					
 						<a href="/logicbot">Launch</a>
 					
@@ -44,6 +41,60 @@
 			</div>
 
 		</div>
+
+		<script type="text/javascript">
+
+			var backgroundImage = document.querySelector(".background-image img");
+
+			var loadBackground = function(){
+
+				var canvas = document.createElement("canvas");
+				canvas.width = backgroundImage.width;
+				canvas.height = backgroundImage.height;
+
+				var ctx = canvas.getContext("2d");
+				ctx.drawImage(backgroundImage, 0, 0, backgroundImage.width, backgroundImage.height);
+				// var color = getVerticalLineAverage(ctx, 0, backgroundImage.height);
+				var color = getPixel(ctx, 0, 0);
+				var imageContainer = document.querySelector(".background-image")
+
+				var cssColor = "rgba(" + color[0] + "," + color[1] + "," + color[2] + "," + color[3] + ")";
+
+				console.log("cssColor: ", cssColor);
+
+				imageContainer.style["background-color"] = cssColor
+
+			};
+
+			getVerticalLineAverage = function(ctx, x, height){
+				var average = [0, 0, 0, 0];
+
+				for(var y=0; y<height; y++){
+					var pixel = getPixel(ctx, x, y);
+
+					for (var i = pixel.length - 1; i >= 0; i--) {
+						average[i] += pixel[i];
+					};
+				};
+
+				for (var i = average.length - 1; i >= 0; i--) {
+					average[i] /= height;
+					average[i] = Math.floor(average[i]);
+				};
+
+				return average;
+			};
+
+			getPixel = function(ctx, x, y){
+				return ctx.getImageData(x, y, 1, 1).data;
+			};
+
+			backgroundImage.addEventListener("load", loadBackground);
+			if(backgroundImage.complete){
+				loadBackground();
+			}
+
+		</script>
 
 	</body>
 </html>

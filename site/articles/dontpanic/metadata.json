@@ -1,6 +1,6 @@
 {
 	"title":"Don't Panic",
-	"photos":["panic3.png", "panic2.png"],
+	"photos":["panic2.png"],
 	"actions":[
 		{
 			"name":"Play",
